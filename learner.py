@@ -7,7 +7,7 @@ from keras.callbacks import ModelCheckpoint
 from keras.utils import np_utils
 
 # load ascii text and covert to lowercase
-filename = "lifestyle.txt"
+filename = ""
 print("File is: ", filename)
 raw_text = open(filename, encoding='UTF8').read()
 raw_text = raw_text.lower()
@@ -49,12 +49,12 @@ model.add(Dropout(0.2))
 model.add(Dense(y.shape[1], activation='softmax'))
 
 #For resuming any training
-#filename = "weights\\Newsweights-improvement-16-1.5702-bigger.hdf5"
+#filename = "weight-you-want-to-resume.hdf5"
 #model.load_weights(filename)
 
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 #Checkpoint
-filepath="weights\\lifestyle-improvement-{epoch:02d}-{loss:.4f}-bigger.hdf5"
+filepath="path-to-weights-with-improvement-values-{epoch:02d}-{loss:.4f}-bigger.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
 callbacks_list = [checkpoint]
 
