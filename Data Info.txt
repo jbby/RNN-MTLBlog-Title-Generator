@@ -1,0 +1,19 @@
+things to do:
+	Total Char: 106492
+	Total Vocab: 72
+	TOtal Patterns 106392
+
+Best Of:
+	Total Char: 50985
+	Total Vocab: 69
+	TOtal Patterns 50885	
+
+News:
+	Total Char: 193545
+	Total Vocab: 77
+	TOtal Patterns 193445
+
+Lifestyle:
+	Total Char: 200811
+	Total Vocab: 76
+	TOtal Patterns 200711
